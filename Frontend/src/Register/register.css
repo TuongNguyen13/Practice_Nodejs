@@ -1,0 +1,121 @@
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+    background: rgba(245, 245, 245, 0.8);
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+   
+}
+
+.register-form h2 {
+    color: #333;
+    font: 22px Arial, Helvetica, sans-serif;
+    margin: 0 0 0px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.register-form p {
+    color: #555;
+    font: 14px Arial, Helvetica, sans-serif;
+    margin: 0 0 3px;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 0px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    color: #333;
+    font: 14px Arial, Helvetica, sans-serif;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.register-form input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 4px rgba(76, 175, 80, 0.3);
+}
+
+.register-form input[type="date"]::-webkit-calendar-picker-indicator {
+ opacity: 1; 
+    filter: brightness(0) saturate(100%); 
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.register-form input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    filter: brightness(0.2) saturate(200%); 
+}
+
+.register-form button {
+    width: 60%;
+    padding: 10px;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 2px 0;
+    font: bold 14px Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.register-form button:hover {
+    background: #45a049;
+}
+
+.register-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 1px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    color: #333;
+    font: 14px Arial, Helvetica, sans-serif;
+    appearance: none;
+    background-position: right 10px center;
+    background-size: 12px;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.register-form select:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 4px rgba(76, 175, 80, 0.3);
+}
+
+.register-form select::selection {
+    background: #4CAF50;
+    color: #fff;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+.register-form .login-link {
+    color: #333;
+    font: 14px Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 1px;
+}
